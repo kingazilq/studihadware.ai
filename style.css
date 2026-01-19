@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Arial, sans-serif;
+  color: white;
+}
+
+body {
+  background: radial-gradient(circle at top, #1a0033, #000);
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 0, 30, 0.95),
+    rgba(0, 0, 0, 0.95)
+  );
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  z-index: 999;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.menu-dots {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+nav {
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  display: none;
+  flex-direction: column;
+  background: rgba(0,0,0,0.95);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+nav a {
+  padding: 14px 22px;
+  text-decoration: none;
+}
+
+/* CONTENT */
+.section {
+  padding: 140px 10% 100px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* 3D */
+.coin-scroll {
+  height: 100vh;
+  position: relative;
+}
+
+#coin3d {
+  width: 100%;
+  height: 100%;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  background: black;
+}
